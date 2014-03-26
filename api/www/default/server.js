@@ -8,7 +8,7 @@ var header = {
 // Handle incoming requests
 var app = http.createServer( function( request, response ) {
 
-	sys.puts(“Incoming request...”);
+	sys.puts("Incoming request...");
 	response.writeHeader(200, header);
 	response.write("<h2>Hello, world!</h2>");
 	response.end();
